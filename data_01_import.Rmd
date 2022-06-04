@@ -1,0 +1,28 @@
+---
+title: "Import Form 20 data for the R4Epi Example Project"
+---
+
+# ⭐️Overview
+
+In this file, we import the mtcars data. This file is unrealistically simple, but we are using it for demonstration purposes only. 
+
+
+# 📦Load packages
+
+```{r message=FALSE}
+library(dplyr, warn.conflicts =  FALSE)
+library(readxl)
+```
+
+
+# 📥Import data 
+
+This data is packaged with base R.
+
+```{r}
+form_20 <- read_excel("data/form_20.xlsx")
+```
+
+```{r}
+glimpse(form_20)
+```
