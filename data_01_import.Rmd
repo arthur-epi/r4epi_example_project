@@ -26,3 +26,18 @@ form_20 <- read_excel("data/form_20.xlsx")
 ```{r}
 glimpse(form_20)
 ```
+
+# 🚧Data management
+
+Convert date_received from character strings to dates.
+
+```{r}
+form_20 <- form_20 %>% 
+  mutate(date_received = as.Date(date_received))
+```
+
+```{r}
+glimpse(form_20)
+```
+
+
